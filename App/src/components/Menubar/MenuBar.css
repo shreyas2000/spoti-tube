@@ -1,0 +1,52 @@
+
+.sidebar {
+    background: black;
+ 
+    display: flex;
+    flex-direction: column;
+ 
+    width: 250px;
+    height: 90vh;
+    padding-top: 2rem;
+    transition: transform 0.2s ease-in;
+ 
+    position: sticky;
+    top: 10vh;
+    left: 0;
+}
+
+svg{
+    margin-left: 10px;
+    margin-right: 50px;
+
+}
+button{
+    font-size: 18px !important; 
+}
+.list-group-item-dark {
+    background-color: black !important;
+    color: #33383d !important;
+}
+.list-group-item-dark:hover {color: white !important}
+
+
+
+@media (max-width: 1224px) {
+    .sidebar {
+       width: 90px;
+    }
+    li {
+        justify-content: center;
+     }
+     span {
+        display: none;
+     }
+ }
+ @media (max-width: 520px) {
+    .sidebar {
+       transform: translateX(-100%);
+ 
+       position: fixed;
+       z-index: 999;
+    }
+ }
